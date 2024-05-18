@@ -1,0 +1,473 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #eee;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+/* Navigation styles */
+nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* Projects section styles */
+.projects-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.projects-section-header {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-tile {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #eee;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.project-tile:hover {
+  transform: translateY(-10px);
+  background-color: #333;
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.code {
+  color: #64ffda;
+}
+
+.btn {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  color: #eee;
+  background-color: #64ffda;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.btn:hover {
+  background-color: #52e0c4;
+}
+
+/* Project details section styles */
+section#project-details {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+section#project-details h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.project-details {
+  background-color: #222;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.project-details h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-details p {
+  font-size: 1.2rem;
+}
+
+.demo-link, .code-link {
+  display: inline-block;
+  background-color: #444;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+/* Responsive Design styles */
+section#responsive-design {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+section#responsive-design h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+section#responsive-design p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.responsive-examples {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.device {
+  margin: 20px;
+  text-align: center;
+}
+
+.device h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.device img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+pre {
+  background-color: #222;
+  color: #eee;
+  padding: 20px;
+  text-align: left;
+  overflow: auto;
+  border-radius: 5px;
+}
+
+code {
+  display: block;
+  white-space: pre-wrap;
+}
+
+
+/* Interactive Elements styles */
+section#interactive-elements {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+section#interactive-elements h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.interactive-element {
+  margin-bottom: 40px;
+}
+
+.interactive-element h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Contact Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  margin: 5px 0;
+}
+
+form input, form textarea {
+  margin: 5px 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #64ffda;
+  color: #111;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #52e0c4;
+}
+
+/* Accordion styles */
+.accordion-button {
+  background-color: #444;
+  color: #fff;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.accordion-button:hover {
+  background-color: #333;
+}
+
+.accordion-content {
+  background-color: #222;
+  color: #eee;
+  padding: 15px;
+  display: none;
+  overflow: hidden;
+}
+
+.accordion-button.active + .accordion-content {
+  display: block;
+}
+
+
+/* Skills section styles */
+section#skills {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+section#skills h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+section#skills ul {
+  list-style-type: none;
+}
+
+section#skills ul li {
+  display: inline-block;
+  margin: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+section#skills ul li i {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Testimonials section styles */
+section#testimonials {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+section#testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.testimonial {
+  background-color: #222;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  font-size: 1.2rem;
+}
+
+.testimonial p {
+  margin-bottom: 10px;
+}
+
+.testimonial strong {
+  display: block;
+  margin-top: 10px;
+  color: #64ffda;
+}
+
+/* Blog or Articles styles */
+.blog-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.blog-section-header h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.blog-section-header p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.blog-posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.blog-post {
+  background-color: #222;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.blog-post:hover {
+  transform: translateY(-10px);
+  background-color: #333;
+}
+
+.blog-post-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #64ffda;
+}
+
+.blog-post-date {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  color: #aaa;
+}
+
+.blog-post-excerpt {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.blog-post-link {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #64ffda;
+  color: #111;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.blog-post-link:hover {
+  background-color: #52e0c4;
+}
+
+
+/* Contact section styles */
+.contact-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contact-section-header {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-details {
+  background-color: #222;
+  color: #eee;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-details:hover {
+  background-color: #333;
+  transform: translateY(-5px);
+}
+
+.contact-details i {
+  margin-right: 10px;
+}
+
+/* Resume section styles */
+section#resume {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+section#resume h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+section#resume a {
+  display: inline-block;
+  background-color: #444;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+}
