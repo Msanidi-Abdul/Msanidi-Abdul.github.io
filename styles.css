@@ -313,7 +313,7 @@ section#skills ul li i {
 /* Testimonials section styles */
 section#testimonials {
   padding: 50px 20px;
-  text-align: center;
+  text-align: center; 
 }
 
 section#testimonials h2 {
@@ -322,11 +322,14 @@ section#testimonials h2 {
 }
 
 .testimonial {
-  background-color: #222;
+  background: rgba(34, 34, 34, 0.7); /* Semi-transparent background */
   padding: 20px;
   margin: 20px 0;
   border-radius: 10px;
   font-size: 1.2rem;
+  backdrop-filter: blur(10px); /* Blur effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  color: #fff; /* Ensure text is readable */
 }
 
 .testimonial p {
@@ -336,7 +339,7 @@ section#testimonials h2 {
 .testimonial strong {
   display: block;
   margin-top: 10px;
-  color: #64ffda;
+  color: #64ffda; /* Bright accent color */
 }
 
 /* Blog or Articles styles */
